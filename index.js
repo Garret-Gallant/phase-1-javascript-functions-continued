@@ -7,8 +7,14 @@ function mondayWork(activity = `go to the office`){
     return (`This Monday, I will ${activity}.`);
 }
 
+// function wrapAdjective(flairString = "*") {
+//     return function innerFunction (innerString = `special`){
+//         return (`You are ${flairString}${innerString}${flairString}!`);
+//     }
+// }
+
 function wrapAdjective(flairString = "*") {
-    return function innerFunction (innerString = `special`){
+    const innerFunction = (innerString = 'special') => {
         return (`You are ${flairString}${innerString}${flairString}!`);
     }
 }
